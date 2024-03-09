@@ -28,7 +28,7 @@ int main(){
         }
     } // 남자방 인원수 합
 
-    printf("%d", sum[0]);
+    
 
     for(int i=2; i<4; i++){
         for(int j=0; j<3; j++){
@@ -41,6 +41,8 @@ int main(){
     ratio[1] = sum[1] / 24.0;
     ratio[2] = sum[2] / 48.0;
 
+
+    printf("Check Result\n");
     printf("Men: %d/24 (%.1f%%)\n", sum[0], ratio[0]*100);
     printf("Women: %d/24 (%.1f%%)\n", sum[1], ratio[1]*100);    
     printf("Total: %d/48 (%.1f%%)\n", sum[2], ratio[2]*100);
