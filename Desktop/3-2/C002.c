@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(){
     int person[4][3];
     int sum[3] = {0, 0, 0};

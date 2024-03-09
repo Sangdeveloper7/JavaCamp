@@ -22,7 +22,7 @@ int main(){
             printf("*");
         }
         printf("\n");
-    } // 중간 5개 원통형 
+    } // 중간 n개 원통형 
 
     for(int i=0; i<size; i++){
         for(int j=0; j<i; j++){
