@@ -197,7 +197,7 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
 	
 	do{
         int add_class = 0;
-        int flag = 0;
+        int flag = 0; // 수업 있는지 없는지 check flag 
         printf("Enter a class code > ");
         scanf("%d",&add_class);
 
@@ -244,9 +244,7 @@ void printMyClasses(int my[], int msize, struct st_class* c[], int csize){
             }
 		}
 	}
-
-	
-
+ // for loop 통해서 출력 
 }
 
 void saveMyClass(int my[], int msize, struct st_class* c[], int csize){
@@ -273,4 +271,6 @@ void saveMyClass(int my[], int msize, struct st_class* c[], int csize){
 
     fprintf(file, "All : %d classes, %d credits (A+~F %d credits, P/F %d credits)\n", msize, totalCredits, creditsAtoF, creditsPF);
     fclose(file);
+
+	// my 에서 강의 번호 받아서 structure c 에서 맞는 강의를 매칭에 저자한다. 
 }
